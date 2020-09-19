@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insta Buy - Add Product</title>
+    <link rel="stylesheet" href="./site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navWrapper">
+        <div class="logoWrapper">
+            <span class="lowerLogo">insta</span><span class="upperLogo">BUY</span>
+         </div>
+         <div class="linkWrapper">
+            <a class="navlink active" href="./index.html" > Add Product</a>
+            <a class="navlink" href="./list.html" >View All</a>
+            <a class="navlink" href="./product.html" >Product</a>
+         </div>
+    </nav>
+    
+    <div class="formDiv">
+                <section class="formSection">
+                    <div class="logoContainer">
+                        <img src="assets/Group 24.png" atl="logo" class="logoImg"></img>
+                    </div>
+                    <div class="formContainer">
+                            <div class="formWrapper">
+                                <form  enctype="multipart/form-data">
+                                        <input type="text" placeholder="Product ID"></input><br>
+                                        <input type="text" placeholder="Product Name"></input><br>
+                                        <input type="text" placeholder="Price"></input>
+                                   
+                                       <div class="gen-row">
+                                        <div class="genderCol">
+                                            <input type="radio" id="men" name="gender" value="Men"/>
+                                            <label for="men" class="genderLabel">Men</label>
+                                        </div>
+                                        <div class="genderCol">
+                                            <input type="radio" id="women" name="gender" value="Women"/>
+                                            <label for="women" class="genderLabel">Women</label>
+                                        </div>
+                                        <div class="genderCol">
+                                            <input type="radio" id="boys" name="gender" value="Boys"/>
+                                            <label for="boys" class="genderLabel">Boys</label>
+                                        </div>
+                                        <div class="genderCol">
+                                            <input type="radio" id="girls" name="gender" value="Girls"/>
+                                            <label for="girls" class="genderLabel">Girls</label>
+                                        </div>
+                                    </div>
+
+                                    
+                                        <div>
+                                                <select class="select-brand" >
+                                                    <option value="0">Brand</option>
+                                                    <option value="volvo">Adidas</option>
+                                                    <option value="saab">Roadster</option>
+                                                </select>
+                                                <select class="select-category" > 
+                                                    <option value="0">Category</option>
+                                                    <option value="mercedes">Shoes</option>
+                                                    <option value="audi">T-shirt</option>
+                                                </select>
+                                        </div>
+                                        <div>
+                                                <select class="select-color" >
+                                                    <option value="0">Select Color</option>
+                                                    <option value="1">Blue</option>
+                                                    <option value="2">Red</option>
+                                                    <option value="3">Yellow</option>
+                                                    <option value="4">Purple</option>
+                                                    <option value="5">Teal</option>
+                                                    <option value="6">Pink</option>
+                                                    <option value="7">Magenta</option>
+                                                    <option value="8">Black</option>
+                                                    <option value="9">White</option>
+                                                </select>
+                                     </div>
+
+                                     <div class="sizeWrapper">
+                                         
+                                         <span class="sizeLabel">Available Sizes</span>
+                                         <div class="sizeBoxWrapper">
+                                            <div class="sizeBox" onClick="divHandler(this)">S</div>
+                                             <div class="sizeBox" onClick=>M</div>
+                                             <div class="sizeBox" onClick=>L</div>
+                                             <div class="sizeBox" onClick=>XL</div>
+                                             <div class="sizeBox" onClick=>XXL</div>
+                                         </div>
+                                      </div>      
+                                    
+                                     <div class="fileUpload">
+                                        <input type= "file" placeholder="No file selected ..." id="lname" name="lname"  class="fileName"/>
+                                     </div>
+                                      <button class="submitBut">Add Product</button>
+                                     
+                                      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+                                      <script type="text/javascript">
+
+                                                $(".sizeBox").on("click", function() {
+                                                    $(this).toggleClass('sizeBox-active');
+                                                });
+                                    
+                                    </script>
+
+                                </form>
+
+                            </div>
+                    </div>
+                </section>
+           </div>
+
+
+
+           </script>
+</body>
+</html>
